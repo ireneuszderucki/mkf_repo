@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
+import { AppConfigurationData } from "src/app/model/app-configuration-data.component";
 
 
 @Component({
@@ -7,6 +8,7 @@ import { Component } from "@angular/core";
   styleUrls:   ['./desktop-profile.component.scss']
 })
 export class DesktopProfileComponent  {
+  @Input() configuration: AppConfigurationData | undefined;
 
 
 

@@ -14,11 +14,11 @@
 </div>
 
 <div *ngIf="!isMobileResolution; else mobileContainer">
-  <app-profile-desktop></app-profile-desktop>
+  <app-profile-desktop [configuration]="configuration"></app-profile-desktop>
  </div>
 
  <ng-template #mobileContainer>
-   <app-profile-mobile></app-profile-mobile>
+   <app-profile-mobile [configuration]="configuration"></app-profile-mobile>
  </ng-template>
 
 
