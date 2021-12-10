@@ -1,6 +1,6 @@
 <div class="master-container">
   <div class="section-master-container">
-    <button class="top-right-btn">Basic</button>
+    <button class="top-right-btn">Srastic</button>
     <img
       src="https://images.unsplash.com/photo-1495954147468-729898cbe8aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmlnfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
     />
@@ -12,5 +12,14 @@
   </div>
   <p>Start editing to see some magic happen :) avada kedavra</p>
 </div>
+
+<div *ngIf="!isMobileResolution; else mobileContainer">
+  <app-profile-desktop></app-profile-desktop>
+ </div>
+
+ <ng-template #mobileContainer>
+   <app-profile-mobile></app-profile-mobile>
+ </ng-template>
+
 
 <router-outlet></router-outlet>
