@@ -5,13 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DesktopProfileComponent } from './profile/desktop/desktop-profile.component';
 import { MobileProfileComponent } from './profile/mobile/mobile-profile.component';
-import { AppConfigurationData } from './model/app-configuration-data.component';
+import { WelcomePageComponent } from './common/welcome-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DesktopProfileComponent,
-    MobileProfileComponent
+    MobileProfileComponent,
+    WelcomePageComponent
 
   ],
   imports: [
