@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { DesktopProfileComponent } from './profile/desktop/desktop-profile.component';
 import { MobileProfileComponent } from './profile/mobile/mobile-profile.component';
 import { WelcomePageComponent } from './common/welcome-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { WelcomePageComponent } from './common/welcome-page.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoreModule
+    CoreModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,12 +10,29 @@
   border: 3px solid green;
 }
 img {
-  height: 100%;
-  width: 100%;
+  height: 100% !important;
+  width: 100% !important;
 }
 
 .top-right-btn {
   position: absolute;
-  top: 5%;
+  top: 10%;
   right: 10%;
+}
+
+#mat-menu {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+
+  button {
+    position: absolute;
+  top: 10%;
+  right: 10%;
+  }
+}
+
+.menu-item {
+  position: absolute;
+  z-index: 1;
 }

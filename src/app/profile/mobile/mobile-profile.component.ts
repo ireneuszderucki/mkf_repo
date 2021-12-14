@@ -9,11 +9,9 @@ import { AppConfigurationData } from 'src/app/model/app-configuration-data.compo
 export class MobileProfileComponent implements OnInit {
   @Input() configuration: AppConfigurationData;
 
-  fullPathToWelcomeImage:string;
+
 
   ngOnInit(): void {
-    console.log('conf: ');
-    console.log(this.configuration);
-    this.fullPathToWelcomeImage = "/assets/homepage/test" + this.configuration.welcomeImageId + ".jpg";
+
   }
 }

@@ -1,16 +1,24 @@
-<div>PUPCIA DUPCIA JEST mobilna</div>
 <div class="master-container">
   <div class="section-master-container">
-    <app-welcome-page></app-welcome-page>
-    <button class="top-right-btn">Srastic</button>
-    <img
-      src="{{fullPathToWelcomeImage}}"
-    />
+    <button class="top-right-btn" mat-mini-fab color="warn" [matMenuTriggerFor]="menu" aria-label="Menu opener">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <mat-menu id="mat-menu" #menu="matMenu">
+      <button mat-menu-item>O mnie</button>
+      <button mat-menu-item>Ślub i wesele</button>
+      <button mat-menu-item>Sesja narzeczeńska</button>
+      <button mat-menu-item>Chrzest</button>
+      <button mat-menu-item>Strefa klienta</button>
+      <button mat-menu-item>Kontakt</button>
+    </mat-menu>
+    <app-welcome-page [configuration]="configuration"></app-welcome-page>
+
+
   </div>
   <div class="section-master-container">
     <img
-      src="https://images.unsplash.com/photo-1495954147468-729898cbe8aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmlnfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
-    />
+      src="https://images.unsplash.com/photo-1495954147468-729898cbe8aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmlnfGVufDB8fDB8fA%3D%3D&w=1000&q=80" />
   </div>
   <p>Just a paragraph</p>
 </div>
