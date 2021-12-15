@@ -1,17 +1,20 @@
 <div class="master-container">
   <div class="section-master-container">
-    <button class="top-right-btn" mat-mini-fab color="warn" [matMenuTriggerFor]="menu" aria-label="Menu opener">
+    <button class="menu-opener" mat-mini-fab color="warn" (click)="openMenu();" >
       <mat-icon>menu</mat-icon>
     </button>
 
-    <mat-menu id="mat-menu" #menu="matMenu">
-      <button mat-menu-item>O mnie</button>
+
+    <!-- mat-mini-fab color="warn" [matMenuTriggerFor]="menu" #menuTrigger="matMenuTrigger" -->
+
+    <!-- <mat-menu #menu="matMenu"> -->
+      <!-- <button mat-menu-item>O mnie</button>
       <button mat-menu-item>Ślub i wesele</button>
       <button mat-menu-item>Sesja narzeczeńska</button>
       <button mat-menu-item>Chrzest</button>
       <button mat-menu-item>Strefa klienta</button>
-      <button mat-menu-item>Kontakt</button>
-    </mat-menu>
+      <button mat-menu-item>Kontakt</button> -->
+    <!-- </mat-menu> -->
     <app-welcome-page [configuration]="configuration"></app-welcome-page>
 
 

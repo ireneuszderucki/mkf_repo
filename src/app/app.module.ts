@@ -10,13 +10,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import {MatDialogModule} from '@angular/material/dialog';
+import { MenuDialogMobileComponent } from './profile/mobile/menu-dialog/menu-dialog-mobile.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DesktopProfileComponent,
     MobileProfileComponent,
-    WelcomePageComponent
+    WelcomePageComponent,
+    MenuDialogMobileComponent
 
   ],
   imports: [
@@ -27,6 +30,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatButtonModule,
     MatIconModule,
     MatMenuModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
